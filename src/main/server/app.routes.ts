@@ -1,7 +1,7 @@
 import { Express } from "express";
-import recadosRoutes from "../../app/features/recados/recados.routes";
+import osRoutes from "../../app/features/os/os.routes";
 import usuariosRoutes from "../../app/features/usuarios/usuarios.routes";
 
 export const makeRoutes = (app: Express) => {
-  app.use(usuariosRoutes(), recadosRoutes());
+  app.use(usuariosRoutes(), osRoutes());
 };
